@@ -42,11 +42,6 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-.left_fb {
+.center {
     text-align: left;
-    padding: 20px;
-}
-.right_tch {
-    text-align: right;
-    padding: 20px;
 }
