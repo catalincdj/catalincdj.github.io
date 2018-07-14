@@ -1,6 +1,6 @@
 body {
   /* Location of the image */
-  background-image: url("http://www.catalinc.com/images/CATALINC_vinyl.jpg");
+  background-image: url("./images/CATALINC_vinyl.jpg");
   
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
