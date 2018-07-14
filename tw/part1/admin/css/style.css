@@ -1,0 +1,626 @@
+/*
+* Color Scheme
+* Black  - #000000;
+* Raisin - #231123;
+* Violet - #372554;
+* Purple - #52528C;
+* Blue   - #7C9EB2; 
+*/
+
+/* Reset Layout */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, ol, ul, li, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, menu, nav, section, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Typography CSS */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0.5em 0;
+  letter-spacing: 1px; }
+  @media screen and (max-width: 599px) {
+    h1 {
+      text-align: center; } }
+
+h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0.5em 0; }
+
+p {
+  font-size: 1em;
+  padding: 0 0 1em 0; }
+
+a {
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px solid #555; }
+  a:hover {
+    color: #88b47f;
+    border-bottom: 1px solid #88b47f; }
+
+/* Layout CSS */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: auto; }
+
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  text-align: center;
+  line-height: 1.5;
+  background: #f8f7f0;
+  color: #555; }
+
+.wrapper {
+  width: 97%;
+  max-width: 50em;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden; }
+
+/* Header CSS */
+header {
+  margin-bottom: 0;
+  padding-bottom: 1em;
+  background: #231123;
+  color: #fff;
+  box-shadow: inset 0px 0px 5px 0px #000000;
+}
+
+/* Navigation CSS */
+@media screen and (max-width: 599px) {
+  .no-js .show_menu_btn {
+    display: none; }
+  .no-js #nav ul {
+    display: block; }
+
+  .js .show_menu_btn {
+    display: block; }
+  .js #nav ul {
+    display: none; } }
+@media screen and (min-width: 600px) {
+  .show_menu_btn {
+    display: none; }
+
+  #nav ul {
+    display: block; } }
+/* The show menu button */
+.show_menu_btn {
+  width: 35%;
+  margin: 1% auto;
+  padding: 0.3em;
+  cursor: pointer;
+  text-align: center;
+  background: #88b47f; }
+
+/* The menu itself */
+#nav ul {
+  margin: 1em 0; }
+  #nav ul li {
+    padding: 0.5em; }
+  #nav ul li:hover {
+    background: orange; }
+  #nav ul a {
+    display: block;
+    font-size: 1em;
+    color: #eee;
+    text-align: center;
+    border-bottom: none; }
+
+@media screen and (max-width: 599px) {
+  #nav ul {
+    display: block; }
+    #nav ul li {
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #6f6f7a; } }
+
+@media screen and (min-width: 600px) {
+  #nav {
+    overflow: hidden; }
+    #nav ul li {
+      width: 7em;
+      float: left;
+      margin-right: 1em; } }
+
+/* Main CSS */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+  margin: 0 0 6% 0;
+  min-height: 100%;
+/*  background-color: #231123;*/
+  background: -webkit-radial-gradient(circle, #372554, #231123); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(circle, #372554, #231123); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #372554, #231123); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #372554, #231123); /* Standard syntax */
+}
+
+.leftSide {
+  width: 20%;
+  height: 96%;
+  float: left;
+  color: #ffffff;
+  margin: 0 0 1% 0;
+  box-shadow: inset 0px 0px 5px 0px #000000;
+}
+
+.middle {
+  width: 58%;
+  float: left;
+  margin: 35px 0 1% 1%;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 5px 0px #000000;
+}
+.adminContent{
+  width: 78%;
+  float: left;
+  margin: 35px 0 1% 1%;
+  color: #ffffff;
+  display: inline-block;
+  box-shadow: inset 0px 0px 5px 0px #000000;
+}
+.rightSide {
+  width: 20%;
+  float: right;
+  color: #ffffff;
+  margin: 0 0 0 0;
+  box-shadow: inset 0px 0px 5px 0px #000000;
+  background-color: #372554;
+}
+
+@media screen and (max-width: 760px) {
+    .leftSide{ float: none; width: 100%; margin-bottom: 1%; }
+    .rightSide{ float: none; width: 100%; margin-bottom: 100px; }
+    .middle{ float: none; width: 100%; margin: 0 0 1% 0; }
+}
+
+/* Footer CSS */
+footer {
+  background-color: #231123;
+  color: #ffffff;
+  font-size: 1em;
+  /*position: static;*/
+  position: absolute;
+  bottom: 0;
+  height: 5%;
+  width: 100%;
+  padding-top: 0.5%;
+  overflow: auto;
+/*   margin: 0 0 -5% 0; */
+  box-shadow: inset 0px 0px 5px 0px #000000;
+}
+footer p {
+  height: 90%;
+}
+
+/* Button CSS */
+button {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: none;
+  background: none;
+  font-size: 1em;
+  color: #eee;
+  cursor: pointer;
+  text-align: center; }
+
+/* Content CSS */
+.content {
+  width: 100%;
+}
+
+/* Modal Login */
+/* Full-width input fields */
+input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.modal button {
+    background-color: #52528C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}
+
+.exit {
+  float: left;
+  width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.modal .cancelbtn {
+    width: 50%;
+    float: left;
+    margin: 0% auto;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.modal .container {
+    padding: 16px;
+    color: #000000;
+}
+
+span.psw {
+    float: right;
+    margin: auto;
+    padding-top: 1%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 65%;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #7C9EB2;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* CSS Table */
+
+.leftSide table {
+  background-color: #2f3036;
+  color : white;
+  width: 100%;
+}
+.leftSide table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.leftSide td a,.leftSide th a {
+  display:block;
+  width:100%;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none;
+}
+
+.firstTable {
+  max-height: 360px;
+  overflow:auto;  
+  margin-top:auto;
+}
+
+.secondTable{
+  max-height: 360px;
+  overflow:auto;  
+  margin-top:auto;
+}
+
+.leftTable{
+  margin-top: 1%;
+}
+
+.middle table {
+  background-color: #2f3036;
+  color : white;
+  width: 100%;
+
+}
+.middle table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    height: 35px;
+}
+
+.middle td a,.middle th a {
+  display:block;
+  width:100%;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.secondHead th,.secondHead td{
+  width: 50px;
+}
+
+td a:hover, th a:hover {
+    color: green;
+    border-bottom: 1px solid #88b47f;
+}
+td, td a {
+  width: 50px;
+}
+
+.middle td a{
+  border: 0;
+}
+
+/* CSS Bilet */
+.bilet{
+  background-color: #372554;
+  height: auto;
+/*  box-shadow: inset 0px 0px 5px 0px #000000;*/
+}
+.limitator {
+  border-radius: 4px;
+  border: 3px solid #52528C;
+}
+.limitatorLight {
+  border-radius: 2px;
+  border: 1px solid #52528C;
+}
+.bilet h3 {
+  text-align: left;
+  margin-left: 2%;
+  font-size: 1em;
+}
+.bilet table {
+  background-color: #52528C;
+  color : white;
+  width: 100%;
+  text-align: center;
+}
+.bilet table th{
+  background-color: #7C9EB2;
+  color : white;
+  text-align: center;
+}
+
+.tabelBilet {
+  padding: 0 2% 2% 2%;
+}
+
+.bilet span {
+  display: inline-block;		
+	  width: 50%; 		
+	  float: right;		
+	  box-shadow: inset 0px 0px 5px 0px #000000;		
+	}		
+			
+	/* Profile CSS */		
+	.profile {		
+	  background-color: #372554;		
+	  min-height: 480px;		
+	  margin-top: 1%;		
+	  color: #ffffff;		
+	  box-shadow: inset 0px 0px 5px 0px #000000;		
+	}		
+	article {		
+	  padding: 5%;		
+	}		
+			
+	#profilePage {		
+	  margin: 50px auto;		
+	  padding-top: 10px;		
+	  width: 640px;		
+	  border: 3px solid #52528C;		
+	}		
+			
+	#leftCol		
+	{		
+	  float: left;		
+	  width: 220px;		
+	  text-align: center;		
+	  margin-right: 20px;		
+	}		
+			
+	#photo {		
+	  width: 200px;		
+	  height: 200px;		
+	  padding-left: 10px;		
+	}		
+			
+	#photo > img {		
+	  width: 200px;		
+	  border-radius: 100px;		
+	  box-shadow: inset 1px 1px 1px 1px #000000;		
+	}		
+			
+	#photoOptions {		
+	  text-align: center;		
+	  width: 200px;		
+	  padding-left: 10px;		
+	  margin-right: 20px;		
+	}		
+			
+	#info {		
+	  width: 550px;		
+	  text-align: center;		
+	  float: right;		
+	  padding-top: 10px;		
+	}		
+			
+	#info strong {		
+	  display: inline-block;		
+	  width: 250px;		
+    text-align: left;
+	}		
+			
+	#info span {		
+	  display: inline-block;		
+	  width: 250px;		
+	  margin-right: 20px;		
+	  box-shadow: inset 0px 0px 5px 0px #000000;		
+	}		
+			
+/*CSS admin */
+.admin{
+  padding: 1%;
+}
+.admin button{
+  padding: 7px 14px; 
+  background-color: orange;
+  margin-top: 1%;
+}
+.adminContent #info {
+  float: left;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    background-color: #52528C;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: #52528C;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 100px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.cursaButon {
+    background-color: orange;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin-top: 1%;
+}
+
+/* CSS code */
