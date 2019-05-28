@@ -1,0 +1,45 @@
+MusicXML to CLIPS Rules
+Echipa E7
+
+    Crăiniceanu Cătălin
+    Dulan Dragoş
+    Fedeleş Andreia
+    Matieş Petruţa
+    Pleşescu Adriana
+
+Detalii proiect
+
+Pentru a extrage informatiile din documentul XML, am creat un parserXML folosind JavaScript.
+
+Folosind un template cu instructiuni CLIPS, am generat si populat cu valori din XML documentul CLIPS exportat.
+
+Template instructiuni CLIPS:
+
+(deftemplate note
+(slot index)
+(slot part)
+(slot step)
+(slot octave)
+(slot duration)
+(slot voice)
+(slot type)
+(slot stem)
+(slot staff)
+)
+
+(deftemplate attributes
+(slot index)
+(slot part)
+(slot measure)
+(slot divisions)
+(slot key)
+(slot beats)
+(slot beat-type)
+(slot sign)
+(slot line)
+)
+
+(deffacts initial
+( attributes (index $index) (part $part) (measure $measure) (divisions $divisions) (key $key) (beats $beats) (beat-type $beat-type) (sign $sign) (line $line) )
+( note (index $index) (part $part) (step $step) (octave $octave) (duration $duration) (type $type) (stem $stem) (staff $staff))
+)
