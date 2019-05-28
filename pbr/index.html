@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MusicXML to CLIPS Rules</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>MusicXML to CLIPS Rules</h1>
+    <h2>Echipa E7</h2>
+    <ol>
+        <li>Cr&#259;iniceanu C&#259;t&#259;lin</li>
+        <li>Dulan Drago&#351;</li>
+        <li>Fedele&#351; Andreia</li>
+        <li>Matie&#351; Petru&#355;a</li>
+        <li>Ple&#351;escu Adriana</li>
+    </ol>
+    <article>
+        <h2>Detalii proiect</h2>
+        <p>Pentru a extrage informatiile din documentul XML, am creat un parserXML folosind JavaScript.</p>
+        <p>Folosind un template cu instructiuni CLIPS, am generat si populat cu valori din XML documentul CLIPS exportat.</p>
+        <p><strong>Template instructiuni CLIPS:</strong></p>
+        <p>(deftemplate note<br/>(slot index)<br/>(slot part)<br/>(slot step)<br/>(slot octave)<br/>(slot duration)<br/>(slot voice)<br/>(slot type)<br/>(slot stem)<br/>(slot staff)<br/>)<br/><br/>(deftemplate attributes<br/>(slot index)<br/>(slot part)<br/>(slot measure)<br/>(slot divisions)<br/>(slot key)<br/>(slot beats)<br/>(slot beat-type)<br/>(slot sign)<br/>(slot line)<br/>)<br/><br/>
+        (deffacts initial<br/>
+        ( attributes (index $index) (part $part) (measure $measure) (divisions $divisions) (key $key) (beats $beats) (beat-type $beat-type) (sign $sign) (line $line) )<br/>
+        ( note (index $index) (part $part) (step $step) (octave $octave) (duration $duration) (type $type) (stem $stem) (staff $staff))<br/>)
+        </p>
+    </article>
+    <script src="./script.js"></script>
+</body>
+
+</html>
